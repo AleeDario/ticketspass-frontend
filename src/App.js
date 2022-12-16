@@ -11,7 +11,7 @@ import ArtistDetail from "./pages/ArtistDetail/ArtistDetail";
 import NewArtist from "./pages/NewArtist/NewArtist";
 import SignUp from "./pages/SignUp/SignUp";
 import SignIn from "./components/SignIn/Form/FormSI";
-import userActions from "./redux/actions/useractions";
+import userActions from "./redux/actions/userActions";
 import Concert from "./pages/Concert/Concert"
 import AdminLayout from "./layouts/Admin/AdminLayout/AdminLayout";
 import AdminHome from "./pages/AdminHome/AdminHome";

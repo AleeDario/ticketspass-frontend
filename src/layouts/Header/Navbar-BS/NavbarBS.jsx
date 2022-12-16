@@ -9,7 +9,7 @@ import ButtonNav from '../../../components/ButtonNav/ButtonNav';
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import Swal from 'sweetalert2';
-import userActions from '../../../redux/actions/useractions';
+import userActions from '../../../redux/actions/userActions';
 
 export default function NavbarBS() {
   let { online, name, photo, token } = useSelector(state => state.user)

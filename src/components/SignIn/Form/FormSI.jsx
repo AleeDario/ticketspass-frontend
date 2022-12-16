@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import Swal from 'sweetalert2';
 import '../../SignUp/Form/Form.css'
 import { useDispatch } from 'react-redux'
-import userActions from "../../../redux/actions/useractions";
+import userActions from "../../../redux/actions/userActions";
 import { useNavigate } from "react-router-dom";
 import { SocialIcon } from 'react-social-icons';
 

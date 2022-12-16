@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
-import artistsActions from '../../redux/actions/artistsActions';
+import artistsActions from '../../redux/actions/artistsactions';
 import AdminTable from '../../utils/AdminTable/AdminTable';
 import "./AdminArtists.css";
 

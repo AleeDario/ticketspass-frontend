@@ -4,7 +4,7 @@ import './Carrousel.css'
 export default function Carrousel() {
     const [position, setPosition] = useState(0)
 
-    let img = ['url(../assets/img/background3.jpg)', 'url(../assets/img/background2.jpg)', 'url(../assets/img/background.jpg)']
+    let img = ['url(../assets/img/background3.jpg)', 'url(../assets/img/background2.jpg)']
 
     useEffect(() => {
         let idInterval = setInterval(() => {
