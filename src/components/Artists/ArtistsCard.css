@@ -14,8 +14,9 @@
 }
 .card__text{
     position: absolute;
-    font-size: 1.5em;
+    font-size: 2rem;
     color: var(--main-color);
+    text-shadow: 1px 0px 0px rgba(0,0,0,1);
     font-weight: 600;
     transition: 50ms;
     z-index: 1;

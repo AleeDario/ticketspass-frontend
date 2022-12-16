@@ -1,0 +1,9 @@
+.right {
+    height: 85vh;
+    background-image: url('../../../public/assets/img/backSign.jpg');
+    background-color: rgba(0, 0, 0, .7);
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: color;
+    width: 100%;
+}

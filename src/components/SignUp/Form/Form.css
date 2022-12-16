@@ -1,39 +1,47 @@
 .formSign{
     display: flex;
-    background-color: rgb(39, 39, 39);
-    min-height: 100vh;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 1em;
 }
-.form-shadows-content{
-    box-shadow: 4px 0px 9px rgb(112, 2, 137);
-}
-.form-bodySign{
+
+.social-networks{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 1em;
+}
+
+/* .right {
+    height: 100vh;
+    background-image: url('../../../../public/assets/img/backSign.jpg');
+    background-color: rgba(0, 0, 0, .7);
+    background-size: cover;
+    background-blend-mode: color;
+    width: 30%;
+} */
+
+.form-shadows-content{
+    height: 100%;
+    width: 100%;
+    display: flex;
     flex-direction: column;
-    background-color: rgb(220, 220, 220);
-    min-width: 300px;
-    min-height: 300px;
-    border-bottom: 4px solid rgb(119, 3, 178);
+    padding-top: 5em;
+    justify-content: center;
+    align-items: center;
 }
 .form-title-div{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(75, 0, 95);
-    width: 300px;
     height: 100%;
-    border-bottom: 4px solid rgb(119, 3, 178);
 
 }
 .title2Sign{
-    font-size: 30px;
-    font-weight: 600;
-    color: rgb(167, 53, 255);
-    text-shadow: 6px 2px 6px rgb(0, 0, 0);
+    font-size: 4rem;
+    color: black;
     font-weight: bold;
 }

@@ -3,7 +3,7 @@ import Product from '../../components/Product/Product'
 import Swal from 'sweetalert2'
 import { Link as Navlink } from 'react-router-dom'
 import axios from 'axios';
-import {MERCADO_PAGO_KEY} from "../../api/url";
+import { MERCADO_PAGO_KEY } from "../../api/url";
 
 export default function Cart() {
 
@@ -43,7 +43,8 @@ export default function Cart() {
             {
                 cart.length > 0 ? (
                     <>
-                        <table className="table container">
+                        <div className='backNav'></div>
+                        <table className="table container-fluid">
                             <thead>
                                 <tr>
                                     <th className="text-black text-center fs-1 fw-bold" colSpan="5">Carrito de compras</th>
@@ -51,11 +52,11 @@ export default function Cart() {
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td className="text-info text-center fw-semibold">Imagen</td>
-                                    <td className="text-info text-center fw-semibold">Producto</td> 
-                                    <td className="text-info text-center fw-semibold">Precio Unitario</td>
-                                    <td className="text-info text-center fw-semibold">Cantidad</td>
-                                    <td className="text-info text-center fw-semibold">Precio Total</td>
+                                    <td className="text-main text-center fw-semibold">Imagen</td>
+                                    <td className="text-main text-center fw-semibold">Producto</td>
+                                    <td className="text-main text-center fw-semibold">Precio Unitario</td>
+                                    <td className="text-main text-center fw-semibold">Cantidad</td>
+                                    <td className="text-main text-center fw-semibold">Precio Total</td>
                                 </tr>
                             </tbody>
                             <tbody>
@@ -65,8 +66,8 @@ export default function Cart() {
                             </tbody>
                             <tbody>
                                 <tr>
-                                    <td className="text-info text-center fw-semibold" colspan="4">Total</td>
-                                    <td className="text-info text-center fw-semibold">${
+                                    <td className="text-main text-center fw-semibold" colSpan="4">Total</td>
+                                    <td className="text-main text-center fw-semibold">${
                                         cart.reduce((acc, item) => acc + item.category.price, 0)
                                     }</td>
                                 </tr>
@@ -110,7 +111,7 @@ export default function Cart() {
                                             }
                                         })
                                     };
-                                    let response = await axios.post('https://api.mercadopago.com/checkout/preferences', preference , {
+                                    let response = await axios.post('https://api.mercadopago.com/checkout/preferences', preference, {
                                         headers: {
                                             "Content-Type": "application/json",
                                             Authorization: `Bearer ${MERCADO_PAGO_KEY}`

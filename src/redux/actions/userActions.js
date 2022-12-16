@@ -33,7 +33,7 @@ const reLogin = createAsyncThunk('reLogin', async (token) => {
     } catch (error) {
         return {
             success: false,
-            response: error.response.data
+            response: error.message
         }
     }
 })

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect} from "react";
 import { Spinner } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { useDispatch, useSelector } from "react-redux";
@@ -16,6 +16,7 @@ export default function AdminVenues() {
 
   useEffect(() => {
     dispatch(getInitialData());
+    // eslint-disable-next-line
   }, []);
 
   const deleteOnClick = async (id, name) => {

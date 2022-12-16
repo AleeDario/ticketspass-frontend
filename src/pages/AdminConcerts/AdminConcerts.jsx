@@ -16,6 +16,7 @@ export default function AdminConcerts() {
 
   useEffect(() => {
     dispatch(getInitialData());
+    // eslint-disable-next-line
   }, []);
 
   const deleteOnClick = async (id, name) => {

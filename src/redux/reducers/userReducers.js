@@ -1,5 +1,5 @@
 import { createReducer } from "@reduxjs/toolkit";
-import userActions from "../actions/userActions";
+import userActions from "../actions/useractions";
 
 const { login, reLogin, logout } = userActions;
 
@@ -32,7 +32,7 @@ const userReducers = createReducer(initialState, (builder) => {
             if (success) {
                 return { ...state, id: user.id, name: user.name, email: user.email, photo: user.photo, role: user.role, online: true, token: token }
             } else {
-                return { ...state, mensaje: response }
+                return { ...state }
             }
         })
         .addCase(logout.fulfilled, (state, action) => {

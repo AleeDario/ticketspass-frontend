@@ -54,7 +54,7 @@
   height: auto;
 }
 .hr-footer-color-grey{
-  border: 2px solid rgb(108, 108, 108);
+  border: 1px solid var(--main-color);
   width: 100%;
 }
 .footer-social-btns{
